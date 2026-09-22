@@ -52,35 +52,11 @@ portal/
 - **Valores** (`valores.html`) — tabela de modalidade/carga horária/investimento
 - **Contato** (`contato.html`) — formulário de contato
 - **Áreas de Ensino** (dropdown na navbar) — leva direto à página completa de cada curso
-- Cada card de curso na home tem dois botões: **Ver detalhes** (abre o Modal exigido
-  no RF07) e **Página completa** (abre `cursos/<curso>.html`)
+- Cada card de curso na home tem dois botões: 
+- **Ver detalhes** (abre o Modal exigido no RF07);
+- **Página completa** (abre `cursos/<curso>.html`)
 
 ## Como testar localmente
 
 Basta abrir `index.html` em qualquer navegador — não há dependência de servidor.
 (Opcional, para simular hospedagem: `python3 -m http.server`, dentro da pasta do projeto.)
-
-## Como publicar (Netlify — mais simples)
-
-1. Crie uma conta gratuita em https://app.netlify.com
-2. Arraste a pasta `portal` inteira para a área "Deploy manually" do painel do Netlify
-3. Copie o link gerado (algo como `https://seu-portal.netlify.app`)
-4. Cole esse link na entrega do Google Classroom
-
-## Como publicar (GitHub Pages — alternativa)
-
-1. Crie um repositório novo no GitHub e envie **todos** os arquivos e pastas desta pasta
-   (`index.html`, `valores.html`, `contato.html`, `css/`, `js/` e `cursos/`), mantendo a
-   mesma estrutura
-2. Vá em **Settings → Pages** (dentro do repositório, não da conta)
-3. Em "Source", selecione "Deploy from a branch"; em "Branch", escolha `main` e a
-   pasta `/ (root)`; clique em **Save**
-4. Após alguns minutos, o link ficará disponível em
-   `https://seu-usuario.github.io/nome-do-repo/`
-
-## Personalização
-
-Todas as páginas de curso, o dropdown "Áreas de Ensino", a tabela de valores e o
-select do formulário de contato são gerados a partir dos mesmos dados. O conteúdo
-de cada curso fica isolado no respectivo arquivo dentro de `cursos/` — edite
-diretamente ali para trocar textos, carga horária ou valores.
